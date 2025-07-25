@@ -1,0 +1,20 @@
+h1{
+    color:red;
+    text-align: center;
+}
+
+/* apllies color to all h1 tags in html  */
+h2{
+    color:orange;
+}
+
+p{
+    background-color:blue;
+    color:rgb(255,255,255);
+    /* rgb range is 255 for each color  */
+}
+button{
+    color:white;
+    background-color:#000000;
+    /* this is hex code  */
+}

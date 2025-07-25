@@ -1,0 +1,16 @@
+<%-include("includes/head.ejs")%>
+<body>
+    <h1> this account belongs to <%= data.name%> </h1>
+    <button>follow</button><button>message</button>
+
+    <p> followers : <%= data.followers %> &nbsp;&nbsp;&nbsp; following <%= data.following %></p>
+    <hr>
+
+    <% for (let post of data.posts) { %>
+        <img src="<%=post.image%>">
+        <p> Likes: <%= post.likes%> &nbsp;&nbsp;&nbsp; comments : <%= post.comments %></p>
+        <hr>
+    <%}%>
+
+</body>
+</html>

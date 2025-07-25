@@ -1,0 +1,44 @@
+.hi{
+    background-color: lavender;
+    height:100px;
+    width:800px;
+    border:5px solid purple;
+    border-radius:15px;
+    padding:20px;
+    margin:20px;
+}
+
+button{
+    background-color: black;
+    color:azure;
+    width:100px;
+}
+
+#out{
+    height:200px;
+    width:70px;
+    border:2px solid black;
+    background-color: white;
+    margin-left:200px;
+}
+
+.in{
+    height:50px;
+    width:50px;
+    border :2px solid black;
+    margin:10px;
+    border-radius:50%;
+
+}
+
+#red{
+    background-color: red;
+}
+
+#yellow{
+    background-color: yellow;
+}
+
+#green{
+    background-color: green;
+}

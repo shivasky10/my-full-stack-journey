@@ -1,0 +1,33 @@
+.container{
+    height:500px;
+    width:800px;
+    background-color: yellow;
+    display:grid;
+    /* grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px; */
+    /* grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px; */
+}
+
+.item{
+    height:100px;
+    width:100px;
+    background-color: red;
+    border: 2px solid black;
+}
+
+/* .one{
+    animation: hello 1s ease-in 0s infinite normal;
+} */
+
+@keyframes hello{
+    from{background-color: red;}
+    to{background-color: blue;}
+}
+
+@media (max-width:300px){
+    .one{
+        background-color: pink;
+    }
+}

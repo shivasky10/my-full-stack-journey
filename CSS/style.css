@@ -1,0 +1,16 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color:red;
+}
+
+.follow {
+    color:violet;
+}
+
+#login{
+    color:white;
+    background-color: green;
+}
