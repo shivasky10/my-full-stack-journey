@@ -19,7 +19,7 @@ I started this journey to build a solid foundation in full-stack web development
 * **Backend:** Node.js, Express.js
 * **Database:** MongoDB, Mongoose , MySQL
 * **Tools & Other:** Git, GitHub, Postman, VS Code
-* 
+* more to come...
 
 ---
 
