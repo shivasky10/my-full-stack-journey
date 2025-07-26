@@ -79,16 +79,8 @@ I welcome contributions and feedback! Here's how you can help:
 ---
 
 
-
-## 📄 License
-
-Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
-
----
-
 ## 📫 Contact
 
 **Owner:** Ch.Shiva Kumar Yadav
 **Email:** [shivasky10@gmail.com](mailto:shivasky10@gmail.com)
-
 Feel free to connect or send feedback!
