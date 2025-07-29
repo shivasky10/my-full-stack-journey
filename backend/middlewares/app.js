@@ -34,7 +34,7 @@ app.use((err,req,res,next)=>{
 
 app.get("/admin",(req,res)=>{
     throw new ExpressError(403,"access denied to admin");
-})
+});
 // app.use((req,res,next)=>{
 //     console.log("iam 2nd middleware");
 //     next()
