@@ -6,6 +6,9 @@ async function main() {
   await mongoose.connect('mongodb://127.0.0.1:27017/relationDemo');
 }
 
+//creating schema
+
+
 const orderSchema = new Schema({
     item:String,
     price:Number,
@@ -31,6 +34,9 @@ customerSchema.post("findOneAndDelete",async(customer)=>{
 
 const Order = mongoose.model("Order",orderSchema);
 const Customer = mongoose.model("Customer",customerSchema);
+
+//adding data
+
 
 const addCustomer = async()=>{
     let customer1 = new Customer({
