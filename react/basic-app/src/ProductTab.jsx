@@ -1,13 +1,19 @@
 import Product from "./Product.jsx"
 
 function ProductTab(){
-    let items=["fast","durable","hitech"];
+    let styles = {
+        display : "flex",
+        flexWrap : "wrap",
+        justifyContent : "center",
+        alignItems : "center",
+    };
     return(
-    <>
-    <Product title="mobile" price={20000}/>
-    <Product title="laptop" price={50000}/>
-    <Product title="pen"/>
-    </> 
+    <div style={styles}>
+    <Product title="Apple airpods (3rd gen)" idx={0}/>
+    <Product title="Samsung S25 Ultra" idx={1}/>
+    <Product title =" Zebronics Keyboard" idx={2}/>
+    <Product title="Logitech Mouse" idx={3}/>
+    </div> 
     );
     
 }

@@ -1,16 +1,15 @@
 
 import './App.css'
-import Title from './Title.jsx';
+// import Title from './Title.jsx';
 import ProductTab from './ProductTab.jsx';
-import Msgbox from './msgbox.jsx';
+// import Msgbox from './msgbox.jsx';
 
 
 function App() {
  
   return(
   <div>
-    <Msgbox username="shiva" textcolor="red"/>
-    <Msgbox username="sky" textcolor="yellow"/>
+    <h2>Blockbuster Deals | Shop now</h2>
     <ProductTab/>
   </div>);
 }
