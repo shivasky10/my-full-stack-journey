@@ -1,4 +1,5 @@
-function printHello(){
+function printHello(event){
+    // event.preventDefault();
     console.log("button clicked");
 }
 function saybye(){
@@ -8,9 +9,8 @@ function saybye(){
 
 export default function Button(){
     return(
-        <div>
-            <button onClick={printHello}>Click me</button>
-            <p onMouseOver={saybye}>click event demo</p>
-        </div>
+        <form onSubmit={printHello}>
+            <button>Click me</button>  
+        </form>
     )
 }
