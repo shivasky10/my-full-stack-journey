@@ -2,12 +2,12 @@ import { useState } from "react"
 import { v4 as uuidv4 } from 'uuid';
 
 export default function Todolist(){
-    let [todos , setTodos]=useState([ {task :"sample task",id : uuidv4()}]);
+    let [todos , setTodos]=useState([ {task :"sample task",id : uuidv4() , isDone : false}]);
     let[newtodo , setNewTodo] = useState("");
 
 
     let addnewTask=()=>{
-        setTodos( (preValue)=>{return [...todos, {task : newtodo , id : uuidv4()}]});
+        setTodos( (preValue)=>{return [...todos, {task : newtodo , id : uuidv4(),isDone:false}]});
         setNewTodo("");
     }
 
@@ -21,19 +21,19 @@ export default function Todolist(){
         
     }
 
-    let uppercase =()=>{
+    let allDone =()=>{
         setTodos((prevtodo)=>prevtodo.map((todo)=>{ 
             return {
-                ...todo , task: todo.task.toUpperCase()
+                ...todo , isDone:true
             }
         }));
     }
 
-    let updateTaskOne =(id)=>{
+    let markAsDone =(id)=>{
         setTodos((prevtodo)=>prevtodo.map((todo)=>{ 
             if(todo.id==id){
                  return {
-                ...todo , task: todo.task.toUpperCase()
+                ...todo , isDone : true
             }
             }else{
                 return todo;
@@ -52,15 +52,15 @@ export default function Todolist(){
             <ul>
                 {
                     todos.map((todo)=>(<li key={todo.id}>
-                        <span>{todo.task}</span>
+                        <span style={ todo.isDone ? {textDecorationLine : "line-through"} : {}}>{todo.task}</span>
                              <button onClick={()=>deleteTask(todo.id)}>Delete</button>
-                            <button onClick={()=>updateTaskOne(todo.id)}>Update one</button>
+                            <button onClick={()=>markAsDone(todo.id)}>Mark Done</button>
 
                             
                         </li>))
                 }
             </ul>
-            <button onClick={uppercase}>UPPERCASE ALL</button>
+            <button onClick={allDone}>UPPERCASE ALL</button>
         </div>
         
     )

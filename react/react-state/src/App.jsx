@@ -5,11 +5,12 @@ import LudoBoard from './LudoBoard'
 import Todolist from './TodoList'
 // import Counter from './counter'
 // import LikeButtton from './LikeButton'
+import Lottery from './Lottery'
 
 function App() {
   return(
   <>
-  <Todolist/>
+  <Lottery/>
   </>
   )
 }
