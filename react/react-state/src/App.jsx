@@ -6,11 +6,13 @@ import Todolist from './TodoList'
 // import Counter from './counter'
 // import LikeButtton from './LikeButton'
 import Lottery from './Lottery'
+import Ticket from './Ticket'
 
 function App() {
   return(
   <>
-  <Lottery/>
+  <Ticket ticket={[0,5,4]}/>
+  <Ticket ticket={[4,5,2,3,1]}/>
   </>
   )
 }
