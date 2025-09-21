@@ -7,12 +7,14 @@ import Todolist from './TodoList'
 // import LikeButtton from './LikeButton'
 import Lottery from './Lottery'
 import Form from './Form'
+import CommentForm from './CommentForm'
 
 function App() {
   return(
   <>
     {/* <Lottery n={3} winningSum={15}/> */}
-    <Form/>
+    {/* <Form/> */}
+    <CommentForm/>
   </>
   )
 }
