@@ -8,13 +8,17 @@ import Todolist from './TodoList'
 import Lottery from './Lottery'
 import Form from './Form'
 import CommentForm from './CommentForm'
+import Comment from './Comment'
+import Joker from './Joker'
 
 function App() {
   return(
   <>
     {/* <Lottery n={3} winningSum={15}/> */}
     {/* <Form/> */}
-    <CommentForm/>
+    {/* <CommentForm/> */}
+    {/* <Comment/> */}
+    <Joker/>
   </>
   )
 }
