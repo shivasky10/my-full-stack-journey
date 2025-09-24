@@ -3,7 +3,7 @@ import Infobox from './Infobox'
 import { useState } from 'react'
 
 export default function WeatherApp(){
-    const [weatherInfo,setWeatherINfo]= useState({
+    const [weatherInfo,setWeatherInfo]= useState({
         city: "Hyderabad",
         feels_like: 26.33,
         humidity: 26.28,
@@ -13,7 +13,7 @@ export default function WeatherApp(){
 
 
     let UpdateInfo = (newinfo)=>{
-        setWeatherINfo(newinfo);
+        setWeatherInfo(newinfo);
     }
     return(
         <div style={{textAlign:"center"}}>

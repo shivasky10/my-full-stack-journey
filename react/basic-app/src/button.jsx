@@ -1,5 +1,5 @@
 function printHello(event){
-    // event.preventDefault();
+    event.preventDefault();
     console.log("button clicked");
 }
 function saybye(){
